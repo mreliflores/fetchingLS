@@ -172,6 +172,13 @@ button {
   text-justify: auto;
 }
 
+.footer {
+  display: flex;
+  width: 100%;
+  margin: 300px 10px 0 0;
+  justify-content: end;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .fav-btn-no-clicked:hover {
 	color: #BC0046;
