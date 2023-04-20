@@ -117,6 +117,7 @@ function Card() {
               </div>
               </div>
           )):<div className="no-yet">There are not Favorites yet</div>}
+          <div className="footer">Made by Elí Flores</div>
     </>
   );
 }
