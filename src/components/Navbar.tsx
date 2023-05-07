@@ -7,7 +7,9 @@ function Navbar () {
     const [collapse, setCollapse] = useState<boolean>(false)
     
     function handleClickA () {
-    setCollapse(!collapse)
+        if (collapse == true) {
+            setCollapse(!collapse)
+        }
     }
     
     useEffect (() => {
@@ -41,7 +43,7 @@ function Navbar () {
             
             <ul className={!collapse ? "menu":'menu-collapse'}>
                 <li ><a href="#section-news" onClick={handleClickA} className={!collapse ? "items":'items-collapse'}>News</a></li>
-                <li ><a href="#section-favs" className={!collapse ? "items":'items-collapse'}>Favorites</a></li>
+                <li ><a href="#section-favs" onClick={handleClickA} className={!collapse ? "items":'items-collapse'}>Favorites</a></li>
             </ul>
         </nav>
     </>);
